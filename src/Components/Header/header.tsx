@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import logo from './logo.png'
 import search from './search.png'
 
@@ -13,44 +14,46 @@ function Header() {
   return (
      <nav className="flex items-center justify-between p-5 bg-opacity-50 bg-white rounded-xl shadow-lg">
       <div className="flex items-center">
-        <img
+        <Link to='/'>
+          <img
           className="ml-[70px] h-8 mr-2"
           src={ logo}
           alt="Logo"
         />
+        </Link>
         {/* <span className="text-gray-800 font-bold text-lg">My App</span> */}
       </div>
       <div className="flex items-center">
-        <a
+        <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          href="#"
+          to="/"
         >
           Home
-        </a>
-         <a
+        </Link>
+         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          href="#"
+          to="/wind"
         >
           Weather & Climate
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          href="#"
+          to="/soil"
         >
           Soil Type
-        </a>
-         <a
+        </Link>
+         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          href="#"
+          to="/disease"
         >
           Disease Detection
-        </a>
-         <a
+        </Link>
+         <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          href="#"
+          to="/market-data"
         >
           Market Data
-        </a>
+        </Link>
         {/* <button className="flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full sm:mx-3">
           Sign up
         </button> */}

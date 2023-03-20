@@ -10,6 +10,10 @@ import disease from './assets/disease.png'
 import marketData from './assets/marketData.png'
 import arrowBack from './assets/Arrowback.png'
 import arrowRight from './assets/Arrowrghtight.png'
+import prodcut1 from './assets/product/prodcut1.png'
+import prodcut2 from './assets/product/product2.png'
+import prodcut3 from './assets/product/product3.png'
+
 
 
 function Home() {
@@ -172,21 +176,50 @@ function Home() {
             Egestas nulla dis posuere purus neque. Dolor urna et sed in et, quam. Varius lacinia est nunc, gravida proin eu dignissim massa. Nibh ultricies lacus quam potenti.
           </h3>
         </div>
-        <div className="flex">
+        <div className="flex justify-center">
           <button className="">
             <img src={ arrowBack } alt="" />
           </button>
-          <div className="flex">
+          <div className="flex  mt-5">
+            <div className=" ml-[20px] rounded-lg shadow-lg shadow-purple-300 w-[263px] h-[310px]">
+              <img className='p-[35px]' src={prodcut1} alt="" />
+              <p className='text-[16px] text-[#01312C] font-semibold flex justify-center'>HD3000 Battery Powered</p>
+              <p>Duis vulputate amet ante vulputate. Fames nulla.</p>
+
+            </div>
+            <div className="rounded-lg shadow-lg shadow-purple-300 w-[263px] h-[310px]  ml-[20px]">
+              <img className='p-[35px] ' src={prodcut2} alt="" />
+              <p className='text-[16px] text-[#01312C] font-semibold flex justify-center'>HD3000 Battery Powered</p>
+              <p className='flex justify-center w-[219px]'>Duis vulputate amet ante vulputate. Fames nulla .</p>
+
+            </div>
+             <div className="rounded-lg shadow-lg shadow-purple-300 w-[263px] h-[310px]  ml-[20px]">
+              <img className='p-[35px] ' src={prodcut2} alt="" />
+              <p className='text-[16px] text-[#01312C] font-semibold flex justify-center'>HD3000 Battery Powered</p>
+              <p className='flex justify-center w-[219px]'>Duis vulputate amet ante vulputate. Fames commodo .</p>
+
+              </div>
+            
+            <div className="rounded-lg shadow-lg shadow-purple-300 w-[263px] h-[310px] ml-[20px]  ">
+              <img className='p-[35px] flex justify-center ' src={prodcut3} alt="" />
+              <p className='text-[12px] text-[#01312C] font-semibold flex justify-center'>HD3000 Battery Powered</p>
+              <p className=''>Duis vulputate amet ante vulputate. Fames nulla commodo</p>
+              </div>
 
           </div>
           <button className="">
             <img src={arrowRight } alt="" />
           </button>
+          
         </div>
-            
+
+        <div className='flex justify-center mt-[35px]'>
+        <Link to={'/prodcuts'} className='bg-[#01312C] text-white p-[11px] rounded hover:bg-[#266937] '>View All Prodcuts</Link>
+          
+            </div>
       </section>
       
-      
+      <section className='w-screen h-[517px] bg-black'></section>
         {/* <section id="about-us" className="py-16">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-8">About Us</h2>
