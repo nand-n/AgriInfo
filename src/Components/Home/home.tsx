@@ -9,7 +9,7 @@ import soill from './assets/soill.png'
 import disease from './assets/disease.png'
 import marketData from './assets/marketData.png'
 import arrowBack from './assets/Arrowback.png'
-import arrowRight from './assets/Arrowright.png'
+import arrowRight from './assets/Arrowrghtight.png'
 
 
 function Home() {
