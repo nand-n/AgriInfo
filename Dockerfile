@@ -1,20 +1,21 @@
-FROM node:18-alpine as ui-build
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
 
-WORKDIR /usr/app/client/
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy package.json and package-lock.json to the container
 COPY package*.json ./
-RUN yarn install 
-COPY src/ ./src
-COPY public/ ./public
 
-FROM node:18-alpine  AS server-build 
-WORKDIR /usr/app/
+# Install dependencies
+RUN yarn install
 
-COPY --from=ui-build /usr/app/client/build ./client/build
-WORKDIR /urs/app/server/
+# Copy the rest of the application to the container
+COPY . .
 
-COPY package*.json ./
-RUN yarn install 
-COPY server.js ./
-ENV NODE_ENV=production
-EXPOSE 5000
-CMD ["node" ,"server.js"]
+# Build the React app
+RUN yarn build
+
+# Serve the app on port 3000
+EXPOSE 3000
+CMD ["yarn", "start"]
