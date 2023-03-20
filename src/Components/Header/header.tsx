@@ -32,7 +32,7 @@ function Header() {
         </Link>
          <Link
           className="text-gray-800 font-bold mx-3 hidden sm:block"
-          to="/wind"
+          to="/climate"
         >
           Weather & Climate
         </Link>

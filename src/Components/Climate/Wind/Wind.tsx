@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Wind() {
+function Climate() {
   return (
       <div>
           <div>
@@ -17,7 +17,7 @@ function Wind() {
           <div className="">
                   {/* <h1 className='text-center text-5xl font-bold my-2'>Weather and Climate</h1> */}
                   <div className="flex justify-center">
-              <iframe className=' rounded-2xl mt-2' width="1000" height="600" src="https://embed.windy.com/embed2.html?lat=6.708&lon=40.605&detailLat=7.689&detailLon=39.364&width=1000&height=600&zoom=7&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=true&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"></iframe>  
+              <iframe className=' rounded-2xl mt-2' width="1000" height="600" src="https://embed.Climatey.com/embed2.html?lat=6.708&lon=40.605&detailLat=7.689&detailLon=39.364&width=1000&height=600&zoom=7&level=surface&overlay=Climate&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=true&metricClimate=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"></iframe>  
                       
                   </div>
           </div>
@@ -26,4 +26,4 @@ function Wind() {
   )
 }
 
-export default Wind
+export default Climate

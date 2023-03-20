@@ -1,9 +1,9 @@
 import React from 'react'
 
-function soil() {
+function Soil() {
   return (
     <div>soil</div>
   )
 }
 
-export default soil
+export default Soil
